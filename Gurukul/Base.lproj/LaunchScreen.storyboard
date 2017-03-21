@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Asimov.otf">
+            <string>Asimov</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -16,12 +22,46 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7He-hf-f6V">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="jpF-uq-Fou">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="WJr-Ew-7hu"/>
+                                            <constraint firstAttribute="height" constant="160" id="ps7-Ci-jbP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARKET GURUKUL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYM-mK-PPy">
+                                        <fontDescription key="fontDescription" name="Asimov" family="Asimov" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Gyw-69-ltj"/>
+                                    <constraint firstItem="bYM-mK-PPy" firstAttribute="centerX" secondItem="7He-hf-f6V" secondAttribute="centerX" id="QdL-iM-T7A"/>
+                                    <constraint firstAttribute="bottom" secondItem="bYM-mK-PPy" secondAttribute="bottom" constant="6" id="dL1-ZS-4vk"/>
+                                    <constraint firstItem="bYM-mK-PPy" firstAttribute="top" secondItem="jpF-uq-Fou" secondAttribute="bottom" constant="18" id="gIQ-WJ-B7C"/>
+                                    <constraint firstItem="jpF-uq-Fou" firstAttribute="centerX" secondItem="7He-hf-f6V" secondAttribute="centerX" id="lJT-B4-ycq"/>
+                                    <constraint firstAttribute="height" constant="216" id="qBw-pd-vzs"/>
+                                    <constraint firstItem="jpF-uq-Fou" firstAttribute="top" secondItem="7He-hf-f6V" secondAttribute="top" id="zzr-J2-BBu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7He-hf-f6V" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bMe-pP-oab"/>
+                            <constraint firstItem="7He-hf-f6V" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mCR-Cr-HVS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.png" width="387" height="387"/>
+    </resources>
 </document>
